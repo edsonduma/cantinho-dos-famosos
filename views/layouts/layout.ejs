@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title><%= sails.config.myconfig.name %> | Blog | 
+      <% if (pagina.titulo == sails.config.myconfig.name) { %>
+          Home Page
+      <% } else { %>
+        <%- pagina.titulo %>
+      <% } %>
+    </title>
+
+    <script src="/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/Lora.css">
+    <link rel="stylesheet" href="/styles/Open_Sans.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/Lora.css">
+    <link rel="stylesheet" href="/styles/Open_Sans.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!--STYLES END-->
+
+  </head>
+
+  <body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="/"><%= sails.config.myconfig.name %></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/posts/find">Posts</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('<%- pagina.fundo %>')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1><%- pagina.titulo %></h1>
+                        <span class="subheading"><%- pagina.descricao %></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <%- body %>
+
+    <!--SCRIPTS-->
+    <script src="/dependencies/sails.io.js"></script>
+    <script src="/js/all.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/pages/contacto.page.js"></script>
+    <script src="/js/scripts.js"></script>
+    <!--SCRIPTS END-->
+    
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/scripts.js"></script>
+
+  </body>
+</html>

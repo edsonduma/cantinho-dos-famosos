@@ -1,0 +1,53 @@
+<!--
+<div id="contacto" v-cloak>
+
+  <h1>TODO: Implement this page.</h1>
+  <p>(See also <em>assets/styles/pages/contacto.less</em>, <em>assets/js/pages/contacto.page.js</em>, and <em>api/controllers/view-contacto.js</em>.)</p>
+
+</div>
+-->
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
+
+
+        <!-- Main Content-->
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-10 mx-auto">
+                  <p>Quer entrar em contato? Preencha o formulário abaixo para enviar uma mensagem e entraremos em contato com você o mais breve possível!</p>
+                  <form id="contactForm" name="sentMessage" novalidate>
+                      <div class="control-group">
+                          <div class="form-group floating-label-form-group controls">
+                              <label>Nome</label>
+                              <input class="form-control" id="nome" type="text" placeholder="Nome" required data-validation-required-message="Por favor, escreva o seu nome." />
+                              <p class="help-block text-danger"></p>
+                          </div>
+                      </div>
+                      <div class="control-group">
+                          <div class="form-group floating-label-form-group controls">
+                              <label>Email</label>
+                              <input class="form-control" id="email" type="email" placeholder="Email" required data-validation-required-message="Por favor, escreva o seu endereço de e-mail." />
+                              <p class="help-block text-danger"></p>
+                          </div>
+                      </div>
+                      <div class="control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                              <label>Telefone</label>
+                              <input class="form-control" id="telefone" type="tel" placeholder="Telefone" required data-validation-required-message="Por favor, escreva o seu número de telefone." />
+                              <p class="help-block text-danger"></p>
+                          </div>
+                      </div>
+                      <div class="control-group">
+                          <div class="form-group floating-label-form-group controls">
+                              <label>Mensagem</label>
+                              <textarea class="form-control" id="mensagem" rows="5" placeholder="Mensagem" required data-validation-required-message="Por favor, digite uma mensagem."></textarea>
+                              <p class="help-block text-danger"></p>
+                          </div>
+                      </div>
+                      <br />
+                      <div id="success"></div>
+                      <button class="btn btn-primary" id="sendMessageButton" type="submit">Enviar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <hr />
